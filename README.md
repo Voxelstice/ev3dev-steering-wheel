@@ -17,9 +17,12 @@ This all is LEGO EV3 Mindstorms stuff
 # Software
 The microcontroller must run [ev3dev](https://www.ev3dev.org/) for this to work. Regular BrickOS wont work.
 All the code is in Python. The ``server.py`` file runs on the computer you want to play a game like BeamNG.Drive on. The ``client.py`` file runs on the microcontroller itself.
+
 The server setups a virtual gamepad using ``vgamepad``, so you must have that library and the ViGEM driver installed (installing that library will also install the driver automatically). Then it starts a TCP server at the port 3000, at which it'll wait for a connection. You then run ``client.py`` on the microcontroller via SSH or PuTTY. If the server shows connection from a IP address, verify that its the microcontroller address. The microcontroller should also show if it successfully connected or not. Once it all is functional, you can start a game like BeamNG and play around!
+
+The code may be horrible, but it wasn't made for production either.
 
 # BeamNG
 This was made to be used in BeamNG specifically. You must change some stuff in the Force Feedback section in Controls. Here are my settings:
-https://i.imgur.com/Otcmlxi.png
-https://i.imgur.com/rV4cXB5.png
+![image](https://i.imgur.com/Otcmlxi.png)
+![image](https://i.imgur.com/rV4cXB5.png)
