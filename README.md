@@ -1,6 +1,8 @@
 # ev3dev-steering-wheel
 A (bad) sim steering wheel using LEGO EV3 parts with horrible force feedback.
 
+I am open sourcing it now because I can't really use it long-term due to batteries. The motors use a significant amount of battery energy, and it also DROPS the voltage down. At times I've had it drop down wayy below 5 volts, which automatically triggered a power off in the OS. On top of that, I am not gonna be using this all the time. i just want to do more stupid stuff with lego
+
 # Disclaimer
 EV3 motors HAVE torque. It is actually difficult to turn while they're being powered. This creates a risk of breaking components and draining your battery, or something worse could also happen. If any of those happen, the responsibility is yours. This is entirely a prototype, I am releasing the source code for anyone who wants to build on top of it.
 This also assumes you know what you're doing in terms of Linux and Python. I am not going to provide support for this project.
